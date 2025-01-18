@@ -13,7 +13,6 @@ This is a starter template using the following stack:
 
 This template uses the new React vite. This includes support for enhanced layouts, colocation of components, and styles.
 
-
 [![Pry](./public/thumbnail.png)](https://pry-vite-lite.vercel.app/)
 
 
