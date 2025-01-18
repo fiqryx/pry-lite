@@ -17,8 +17,9 @@ export function Route() {
 
     React.useEffect(() => {
         const loadRoutes = async () => {
-            const loadedRoutes = await getRoutes();
-            setRoutes(loadedRoutes);
+            setRoutes(
+                await getRoutes()
+            );
             setLoading(false);
         };
 
