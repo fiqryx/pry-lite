@@ -20,24 +20,30 @@ export interface Metadata {
     };
 }
 
-const Metadata: React.FC<Metadata> = ({ title, description, openGraph, twitter }) => (
-    <Helmet>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        {/* OpenGraph */}
-        <meta property="og:title" content={openGraph?.title} />
-        <meta property="og:description" content={openGraph?.description} />
-        <meta property="og:url" content={openGraph?.url?.toString()} />
-        <meta property="og:image" content={openGraph?.images} />
-        <meta property="og:site_name" content={openGraph?.siteName} />
-        {/* Twitter */}
-        <meta name="twitter:card" content={twitter?.card} />
-        <meta name="twitter:creator" content={twitter?.creator} />
-        <meta name="twitter:title" content={twitter?.title} />
-        <meta name="twitter:description" content={twitter?.description} />
-        <meta name="twitter:image" content={twitter?.images} />
-    </Helmet>
-)
+const Metadata: React.FC<Metadata> = ({ title, description, openGraph, twitter }) => {
+    const origin = typeof window !== 'undefined' ? window.location.origin : '';
+    const image = (path?: string) =>
+        path ? `${origin}${path.startsWith('/') ? '' : '/'}${path}` : '';
+
+    return (
+        <Helmet>
+            <title>{title}</title>
+            <meta name="description" content={description} />
+            {/* OpenGraph */}
+            <meta property="og:title" content={openGraph?.title} />
+            <meta property="og:description" content={openGraph?.description} />
+            <meta property="og:url" content={openGraph?.url?.toString()} />
+            <meta property="og:image" content={image(openGraph?.images)} />
+            <meta property="og:site_name" content={openGraph?.siteName} />
+            {/* Twitter */}
+            <meta name="twitter:card" content={twitter?.card} />
+            <meta name="twitter:creator" content={twitter?.creator} />
+            <meta name="twitter:title" content={twitter?.title} />
+            <meta name="twitter:description" content={twitter?.description} />
+            <meta name="twitter:image" content={image(twitter?.images)} />
+        </Helmet>
+    )
+}
 
 export {
     Metadata
