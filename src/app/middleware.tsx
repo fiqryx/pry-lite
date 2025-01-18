@@ -30,7 +30,7 @@ export function Middleware({ children }: { children: React.ReactNode }) {
     }, [location.pathname, navigate, token]);
 
     if (loading) {
-        return <>Loading...</>;
+        return null;
     }
 
     return children;
