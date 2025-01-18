@@ -1,12 +1,12 @@
+import { createMetadata } from "@/lib/metadata"
 import { ArrowLeftIcon } from "lucide-react";
-import { Metadata } from "@/components/metadata";
 import { buttonVariants } from "@/components/ui/button";
+
+export const metadata = createMetadata({ title: '404: This page could not be found' })
 
 export default function Page() {
     return (
         <div className="flex flex-col h-[100vh] bg-background justify-center items-center p-6 gap-10">
-            <Metadata title="404: This page could not be found" />
-
             <div className="relative flex justify-center items-center w-full h-96">
                 <img
                     alt="error"

@@ -1,7 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
-import { Route } from './route.tsx'
+import { Route } from '@/app/route'
+import { BrowserRouter } from "react-router-dom"
+import { Middleware } from '@/app/middleware.tsx'
 import { Toaster } from "@/components/ui/toaster"
 import { Analytics } from '@vercel/analytics/react'
 import { HelmetProvider } from 'react-helmet-async'
@@ -19,7 +21,12 @@ createRoot(document.getElementById('root')!).render(
         defaultTheme="system"
         disableTransitionOnChange
       >
-        <Route />
+        <BrowserRouter>
+          <Middleware>
+            <Route />
+          </Middleware>
+        </BrowserRouter>
+
         <Toaster />
         <Analytics />
         <SonnerToaster />

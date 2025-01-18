@@ -1,5 +1,5 @@
 import React from 'react'
-import { Middleware } from './middleware.tsx'
+import { Metadata } from '@/components/metadata.tsx';
 
 import {
     getRoutes,
@@ -7,7 +7,6 @@ import {
 } from '@/lib/route.ts'
 import {
     Routes,
-    BrowserRouter,
     Route as RouteDOM,
 } from "react-router-dom";
 
@@ -31,14 +30,17 @@ export function Route() {
     }
 
     return (
-        <BrowserRouter>
-            <Middleware>
-                <Routes>
-                    {routes.map(({ page: Comp, ...props }, idx) =>
-                        Comp ? <RouteDOM key={idx} {...props} element={<Comp />} /> : null
-                    )}
-                </Routes>
-            </Middleware>
-        </BrowserRouter>
+        <Routes>
+            {routes.map(({ page: Comp, metadata, ...props }, idx) => Comp && (
+                <RouteDOM
+                    key={idx}
+                    {...props}
+                    element={(<>
+                        <Metadata {...metadata} />
+                        <Comp />
+                    </>)}
+                />
+            ))}
+        </Routes>
     );
 }

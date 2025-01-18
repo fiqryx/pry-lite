@@ -1,4 +1,4 @@
-import { Metadata } from "@/components/metadata"
+import { createMetadata } from "@/lib/metadata"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -12,10 +12,11 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 
+export const metadata = createMetadata({ title: 'Reset password' })
+
 export default function ResetPassword() {
     return (
         <div className="w-full h-screen bg-background flex flex-col items-center justify-center px-4">
-            <Metadata title="Reset password" />
 
             <Card className="mx-auto">
                 <CardHeader>
