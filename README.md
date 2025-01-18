@@ -11,7 +11,7 @@ This is a starter template using the following stack:
 - Deployment - [Vercel](https://vercel.com/docs/concepts/next.js/overview)
 - Analytics - [Vercel Analytics](https://vercel.com/analytics)
 
-This template uses the new Next.js App Router. This includes support for enhanced layouts, colocation of components, and styles.
+This template uses the new vite. This includes support for enhanced layouts, colocation of components, and styles.
 
 
 [![Pry](./public/thumbnail.png)](https://pry-vite-lite.vercel.app/)
