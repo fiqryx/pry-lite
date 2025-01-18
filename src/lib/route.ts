@@ -5,7 +5,7 @@ type Props = RouteProps & {
     page?: () => JSX.Element
 }
 
-const pages = import.meta.glob("../app/**/page.tsx", { eager: true })
+const pages = import.meta.glob("@/app/**/page.tsx", { eager: true });
 
 export const routes: Props[] = Object.entries(pages).map(([path, module]) => {
     const element = (module as { default: () => JSX.Element }).default
@@ -15,7 +15,7 @@ export const routes: Props[] = Object.entries(pages).map(([path, module]) => {
     }
 
     const routePath = path
-        .replace("../app", "")
+        .replace("/src/app", "")
         .replace(/\/\([^)]*\)/g, "")
         .replace("/page.tsx", "")
         .replace(/\[([^\]]+)\]/g, ":$1") || "/";
@@ -26,6 +26,9 @@ export const routes: Props[] = Object.entries(pages).map(([path, module]) => {
     }
 })
 routes.push({ path: "*", page: NotFound })
+
+console.log(routes);
+
 
 
 
