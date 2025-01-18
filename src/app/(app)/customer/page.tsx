@@ -1,3 +1,5 @@
+import { createMetadata } from "@/lib/metadata"
+
 import { customers } from "@/types/customer"
 import { Button } from "@/components/ui/button"
 import { columns } from "./components/columns"
@@ -18,6 +20,7 @@ import {
     PlusIcon,
 } from "lucide-react"
 
+export const metadata = createMetadata({ title: 'Customers' })
 
 const breadcrumb: Breadcrumb[] = [
     { label: 'Dashboard', href: '/dashboard' },
@@ -26,11 +29,7 @@ const breadcrumb: Breadcrumb[] = [
 
 export default function Page() {
     return (
-        <Dashboard
-            breadcrumb={breadcrumb}
-            className="container mx-auto sm:pt-16"
-            metadata={{ title: 'Customer' }}
-        >
+        <Dashboard breadcrumb={breadcrumb} className="container mx-auto sm:pt-16">
             <div className="flex flex-col gap-8">
                 <div className="grid gap-2">
                     <div className="flex flex-wrap justify-between gap-4">

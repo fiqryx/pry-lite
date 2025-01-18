@@ -1,3 +1,5 @@
+import { createMetadata } from "@/lib/metadata"
+
 import { Button } from "@/components/ui/button";
 import { IntergrationCards } from "./components/integration-cards";
 import { IntegrationPagination } from "./components/integration-pagination";
@@ -17,6 +19,7 @@ import {
     PlusIcon,
 } from "lucide-react";
 
+export const metadata = createMetadata({ title: 'Integrations' })
 
 const breadcrumb: Breadcrumb[] = [
     { label: 'Dashboard', href: '/dashboard' },
@@ -25,11 +28,7 @@ const breadcrumb: Breadcrumb[] = [
 
 export default function Page() {
     return (
-        <Dashboard
-            breadcrumb={breadcrumb}
-            className="container mx-auto sm:pt-16"
-            metadata={{ title: 'Integrations' }}
-        >
+        <Dashboard breadcrumb={breadcrumb} className="container mx-auto sm:pt-16">
             <div className="flex flex-col gap-8">
                 <div className="grid gap-2">
                     <div className="flex flex-wrap justify-between gap-4">

@@ -11,10 +11,6 @@ import { SearchCommand } from "./search-command"
 import { ToggleNotification } from "./toggle-notification"
 
 import {
-    Metadata,
-    MetadataProps
-} from "./metadata"
-import {
     Breadcrumb,
     BreadcrumbItem,
     BreadcrumbLink,
@@ -37,7 +33,6 @@ export type DashboardProps = {
     className?: string
     breadcrumb?: Breadcrumb[]
     breadcrumbSparator?: React.ReactNode
-    metadata?: MetadataProps
 }
 
 export function Dashboard({
@@ -45,12 +40,9 @@ export function Dashboard({
     className,
     breadcrumbSparator,
     breadcrumb,
-    metadata
 }: DashboardProps) {
     return (
         <AuthProvider>
-            <Metadata {...metadata} />
-
             <SidebarProvider>
                 <AppSidebar />
                 <SidebarInset>

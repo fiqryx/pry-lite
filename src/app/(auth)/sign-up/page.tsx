@@ -1,5 +1,5 @@
+import { createMetadata } from "@/lib/metadata"
 import { SingUpForm } from "./components/form"
-import { Metadata } from "@/components/metadata"
 
 import {
     Card,
@@ -9,10 +9,11 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 
+export const metadata = createMetadata({ title: 'Sign up' })
+
 export default function SingUp() {
     return (
         <div className="w-full h-screen bg-background flex items-center justify-center px-4">
-            <Metadata title="Sign up" />
 
             <Card className="mx-auto max-w-sm">
                 <CardHeader>

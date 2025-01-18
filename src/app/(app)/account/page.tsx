@@ -1,3 +1,5 @@
+import { createMetadata } from "@/lib/metadata"
+
 import { AccountInfo } from "./components/account-info";
 import { AccountForm } from "./components/account-form";
 
@@ -6,6 +8,7 @@ import {
     Dashboard
 } from "@/components/app-dashboard"
 
+export const metadata = createMetadata({ title: 'Account' })
 
 const breadcrumb: Breadcrumb[] = [
     { label: 'Dashboard', href: '/dashboard' },
@@ -14,11 +17,7 @@ const breadcrumb: Breadcrumb[] = [
 
 export default function Page() {
     return (
-        <Dashboard
-            breadcrumb={breadcrumb}
-            className="container mx-auto sm:pt-16"
-            metadata={{ title: 'Account' }}
-        >
+        <Dashboard breadcrumb={breadcrumb} className="container mx-auto sm:pt-16">
             <div className="flex flex-col gap-8">
                 <h1 className="text-2xl sm:text-4xl font-semibold">
                     Account

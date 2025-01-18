@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/metadata"
 import { Dashboard } from "@/components/app-dashboard";
 
 import { DashboardWidgets } from "./components/dashboard-widgets";
@@ -6,12 +7,11 @@ import { DashboardTraffic } from "./components/dashboard-traffic";
 import { DashboardProducts } from "./components/dashboard-products";
 import { DashboardOrders } from "./components/dashboard-orders";
 
+export const metadata = createMetadata({ title: 'Overview' })
+
 export default function Page() {
     return (
-        <Dashboard
-            className="container mx-auto sm:pt-16"
-            metadata={{ title: 'Overview' }}
-        >
+        <Dashboard className="container mx-auto sm:pt-16" >
             <DashboardWidgets className="md:grid-cols-2 lg:grid-cols-4 gap-5" />
             <div className="grid lg:grid-cols-3 auto-rows-min gap-5">
                 <DashboardSales className="lg:col-span-2" />
