@@ -16,6 +16,19 @@ This template uses the new React vite. This includes support for enhanced layout
 [![Pry](./public/thumbnail.png)](https://pry-vite-lite.vercel.app/)
 
 
+## 🔥 Flexible Variants for Every Workflow
+
+Seamlessly integrate into your favorite tech stack with optimized variants designed for performance and simplicity. Choose the setup that fits your development flow:
+
+| 🚀 **Framework**               | 🌐 **Repository**                                      |
+|--------------------------------|--------------------------------------------------------|
+| **Next.js Variant** – SSR Ready & SEO Optimized ⚡ | [**pry-nextjs-lite**](https://github.com/fiqryx/pry-nextjs-lite) |
+| **Vite Variant** – Lightning Fast & Lightweight ⚡ | [**pry-vite-lite**](https://github.com/fiqryx/pry-vite-lite)     |
+
+> Build sleek, responsive UIs with ease, whether you're scaling with **Next.js** or blazing ahead with **Vite**. Craft powerful and lightweight interfaces with **Pry Lite** ✨
+---
+
+
 ## Pages
 
 - [Dashboard](https://pry-vite-lite.vercel.app/dashboard)
@@ -57,6 +70,8 @@ Within the download you'll find the following directories and files:
 		├── (app)
 		└── (auth)
 ```
+
+---
 
 ## Pro Version
 Upgrade to the Pro version and unlock a host of advanced features to supercharge your app development. With the Pro version, you gain access to tools and integrations that make creating awesome applications faster and easier!
