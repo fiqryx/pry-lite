@@ -1,31 +1,40 @@
 import NotFound from "@/app/not-found";
-import { RouteProps } from "react-router-dom";
+import { RouteProps as RoutePropsDOM } from "react-router-dom";
 
-type Props = RouteProps & {
+export type RouteProps = RoutePropsDOM & {
     page?: () => JSX.Element
 }
 
-const pages = import.meta.glob("../app/**/page.tsx", { eager: true })
+const pages = import.meta.glob("@/app/**/page.tsx");
 
-export const routes: Props[] = Object.entries(pages).map(([path, module]) => {
-    const element = (module as { default: () => JSX.Element }).default
+export const getRoutes = async (): Promise<RouteProps[]> => {
+    const routes = await Promise.all(
+        Object.entries(pages).map(async ([path, module]) => {
+            const element = (
+                (await module()) as { default: () => JSX.Element }
+            ).default;
 
-    if (!element) {
-        return {}
-    }
+            if (!element) return {} as RouteProps;
 
-    const routePath = path
-        .replace("../app", "")
-        .replace(/\/\([^)]*\)/g, "")
-        .replace("/page.tsx", "")
-        .replace(/\[([^\]]+)\]/g, ":$1") || "/";
+            const routePath = path
+                .replace("/src/app", "")
+                .replace(/\/\([^)]*\)/g, "")
+                .replace("/page.tsx", "")
+                .replace(/\[([^\]]+)\]/g, ":$1") || "/";
 
-    return {
-        path: routePath === "" ? "/" : routePath,
-        page: element,
-    }
-})
-routes.push({ path: "*", page: NotFound })
+            return {
+                path: routePath === "" ? "/" : routePath,
+                page: element,
+            };
+        })
+    );
+
+    // Add the NotFound route
+    routes.push({ path: "*", page: NotFound });
+
+    return routes;
+};
+
 
 
 

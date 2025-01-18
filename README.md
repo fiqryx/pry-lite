@@ -79,9 +79,9 @@ Upgrade to the Pro version and unlock a host of advanced features to supercharge
 
 ## Reporting Issues:
 
-- [Github Issues Page](https://github.com/fiqryx/pry-nextjs-basic/issues)
+- [Github Issues Page](https://github.com/fiqryx/pry-vite-lite/issues)
 
 
 ## License
 
-- Licensed under [MIT](https://github.com/fiqryx/pry-nextjs-basic/blob/main/LICENSE)
+- Licensed under [MIT](https://github.com/fiqryx/pry-vite-lite/blob/main/LICENSE)
