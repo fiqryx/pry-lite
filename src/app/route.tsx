@@ -31,13 +31,13 @@ export function Route() {
 
     return (
         <Routes>
-            {routes.map(({ page: Comp, metadata, ...props }, idx) => Comp && (
+            {routes.map(({ page: Comp, params, metadata, ...props }, idx) => Comp && (
                 <RouteDOM
                     key={idx}
                     {...props}
                     element={(<>
                         <Metadata {...metadata} />
-                        <Comp />
+                        <Comp params={params} />
                     </>)}
                 />
             ))}
