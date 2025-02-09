@@ -1,4 +1,4 @@
-### [🖥️ Live Preview](https://pry-vite-lite.vercel.app/)
+### [🖥️ Live Preview](https://pry-lite.vercel.app/)
 
 ## Overview
 
@@ -13,7 +13,7 @@ This is a starter template using the following stack:
 
 This template uses the new React vite. This includes support for enhanced layouts, colocation of components, and styles.
 
-[![Pry](./public/thumbnail.png)](https://pry-vite-lite.vercel.app/)
+[![Pry](./public/thumbnail.png)](https://pry-lite.vercel.app/)
 
 
 ## 🔥 Flexible Variants for Every Workflow
@@ -22,8 +22,8 @@ Seamlessly integrate into your favorite tech stack with optimized variants desig
 
 | 🚀 **Framework**               | 🌐 **Repository**                                      |
 |--------------------------------|--------------------------------------------------------|
-| **Next.js Variant** – SSR Ready & SEO Optimized ⚡ | [**pry-nextjs-lite**](https://github.com/fiqryx/pry-nextjs-lite) |
-| **Vite Variant** – Lightning Fast & Lightweight ⚡ | [**pry-vite-lite**](https://github.com/fiqryx/pry-vite-lite)     |
+| **Vite Variant** – Lightning Fast & Lightweight ⚡ | [**pry-vite-lite**](https://github.com/fiqryx/pry-lite)     |
+| **Next.js Variant** – SSR Ready & SEO Optimized ⚡ | [**pry-nextjs-lite**](https://github.com/fiqryx/pry-lite/tree/nextjs) |
 
 > Build sleek, responsive UIs with ease, whether you're scaling with **Next.js** or blazing ahead with **Vite**. Craft powerful and lightweight interfaces with **Pry Lite** ✨
 ---
@@ -31,17 +31,17 @@ Seamlessly integrate into your favorite tech stack with optimized variants desig
 
 ## Pages
 
-- [Dashboard](https://pry-vite-lite.vercel.app/dashboard)
-- [Customers](https://pry-vite-lite.vercel.app/dashboard/customers)
-- [Integrations](https://pry-vite-lite.vercel.app/dashboard/integrations)
-- [Settings](https://pry-vite-lite.vercel.app/dashboard/settings)
-- [Account](https://pry-vite-lite.vercel.app/dashboard/account)
-- [Sign In](https://pry-vite-lite.vercel.app/sign-in)
-- [Sign Up](https://pry-vite-lite.vercel.app/sign-up)
+- [Dashboard](https://pry-lite.vercel.app/dashboard)
+- [Customers](https://pry-lite.vercel.app/dashboard/customers)
+- [Integrations](https://pry-lite.vercel.app/dashboard/integrations)
+- [Settings](https://pry-lite.vercel.app/dashboard/settings)
+- [Account](https://pry-lite.vercel.app/dashboard/account)
+- [Sign In](https://pry-lite.vercel.app/sign-in)
+- [Sign Up](https://pry-lite.vercel.app/sign-up)
 
 ## Quick start
 
-- Clone the repo: `git clone https://github.com/fiqryx/pry-vite-lite.git`
+- Clone the repo: `git clone https://github.com/fiqryx/pry-lite.git`
 - Make sure your Node.js and npm versions are up to date
 - Install dependencies: `npm install` or `yarn`
 - Start the server: `npm run dev` or `yarn dev`
@@ -93,9 +93,9 @@ Upgrade to the Pro version and unlock a host of advanced features to supercharge
 
 ## Reporting Issues:
 
-- [Github Issues Page](https://github.com/fiqryx/pry-vite-lite/issues)
+- [Github Issues Page](https://github.com/fiqryx/pry-lite/issues)
 
 
 ## License
 
-- Licensed under [MIT](https://github.com/fiqryx/pry-vite-lite/blob/main/LICENSE)
+- Licensed under [MIT](https://github.com/fiqryx/pry-lite/blob/vite/LICENSE)
