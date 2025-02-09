@@ -32,10 +32,10 @@ Seamlessly integrate into your favorite tech stack with optimized variants desig
 ## Pages
 
 - [Dashboard](https://pry-lite.vercel.app/dashboard)
-- [Customers](https://pry-lite.vercel.app/dashboard/customers)
-- [Integrations](https://pry-lite.vercel.app/dashboard/integrations)
-- [Settings](https://pry-lite.vercel.app/dashboard/settings)
-- [Account](https://pry-lite.vercel.app/dashboard/account)
+- [Customers](https://pry-lite.vercel.app/customer)
+- [Integrations](https://pry-lite.vercel.app/integration)
+- [Settings](https://pry-lite.vercel.app/settings)
+- [Account](https://pry-lite.vercel.app/account)
 - [Sign In](https://pry-lite.vercel.app/sign-in)
 - [Sign Up](https://pry-lite.vercel.app/sign-up)
 
