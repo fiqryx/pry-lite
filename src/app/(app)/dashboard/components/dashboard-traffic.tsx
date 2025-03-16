@@ -22,9 +22,9 @@ import {
 
 
 const config: ChartConfig = {
-    desktop: { label: "Desktop", color: "hsl(var(--chart-1))", icon: MonitorIcon },
-    tablet: { label: "Tablet", color: "hsl(var(--chart-3))", icon: TabletSmartphoneIcon },
-    mobile: { label: "Mobile", color: "hsl(var(--chart-5))", icon: TabletIcon },
+    desktop: { label: "Desktop", color: "var(--chart-1)", icon: MonitorIcon },
+    tablet: { label: "Tablet", color: "var(--chart-3)", icon: TabletSmartphoneIcon },
+    mobile: { label: "Mobile", color: "var(--chart-5)", icon: TabletIcon },
 }
 
 const data = [

@@ -20,7 +20,7 @@ const widgets = [
         label: 'Budget',
         value: "$24k",
         icon: DollarSignIcon,
-        color: "hsl(var(--primary))",
+        color: "var(--primary)",
         data: {
             type: 'indicator',
             value: 12
@@ -30,7 +30,7 @@ const widgets = [
         label: 'Total customers',
         value: "16k",
         icon: UsersIcon,
-        color: "hsl(var(--success))",
+        color: "var(--success)",
         data: {
             type: 'indicator',
             value: -16
@@ -40,7 +40,7 @@ const widgets = [
         label: 'Task progress',
         value: "75.5%",
         icon: ListIcon,
-        color: "hsl(var(--warning))",
+        color: "var(--warning)",
         data: {
             type: 'progress',
             value: 75.5
@@ -50,7 +50,7 @@ const widgets = [
         label: 'Total profit',
         value: "$15k",
         icon: ReceiptIcon,
-        color: "hsl(var(--primary))"
+        color: "var(--primary)"
     },
 ]
 
