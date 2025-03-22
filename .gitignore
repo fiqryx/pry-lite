@@ -29,6 +29,6 @@ dist-ssr
 
 # misc
 .vercel
-*.lockb
+# *.lockb
 .next
 next*
