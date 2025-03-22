@@ -1,5 +1,6 @@
 import React from "react"
 import { cn } from "@/lib/utils"
+import { Progress } from "@/components/ui/progress"
 
 import {
     Card,
@@ -13,14 +14,13 @@ import {
     ReceiptIcon,
     UsersIcon
 } from "lucide-react"
-import { Progress } from "@/components/ui/progress"
 
 const widgets = [
     {
         label: 'Budget',
         value: "$24k",
         icon: DollarSignIcon,
-        color: "var(--primary)",
+        color: "hsl(var(--primary))",
         data: {
             type: 'indicator',
             value: 12
@@ -30,7 +30,7 @@ const widgets = [
         label: 'Total customers',
         value: "16k",
         icon: UsersIcon,
-        color: "var(--success)",
+        color: "hsl(var(--success))",
         data: {
             type: 'indicator',
             value: -16
@@ -40,7 +40,7 @@ const widgets = [
         label: 'Task progress',
         value: "75.5%",
         icon: ListIcon,
-        color: "var(--warning)",
+        color: "hsl(var(--warning))",
         data: {
             type: 'progress',
             value: 75.5
@@ -50,7 +50,7 @@ const widgets = [
         label: 'Total profit',
         value: "$15k",
         icon: ReceiptIcon,
-        color: "var(--primary)"
+        color: "hsl(var(--primary))"
     },
 ]
 

@@ -28,11 +28,11 @@ import {
 const config: ChartConfig = {
     desktop: {
         label: "This year",
-        color: "var(--chart-1)",
+        color: "hsl(var(--chart-1))",
     },
     mobile: {
         label: "Last year",
-        color: "var(--chart-1)",
+        color: "hsl(var(--chart-1) / 0.5)",
     },
 }
 
@@ -89,7 +89,7 @@ export function DashboardSales({
                             content={<ChartTooltipContent indicator="dot" />}
                         />
                         <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
-                        <Bar dataKey="mobile" fill="var(--color-mobile)" style={{ opacity: 0.5 }} radius={4} />
+                        <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
                     </BarChart>
                 </ChartContainer>
             </CardContent>
