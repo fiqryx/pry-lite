@@ -39,13 +39,13 @@ Seamlessly integrate into your favorite tech stack with optimized variants desig
 - [Sign In](https://pry-lite.vercel.app/sign-in)
 - [Sign Up](https://pry-lite.vercel.app/sign-up)
 
-## Quick start
+## How to install
 
-- Clone the repo: `git clone https://github.com/fiqryx/pry-lite.git`
-- Make sure your Node.js and npm versions are up to date
-- Install dependencies: `npm install` or `yarn`
-- Start the server: `npm run dev` or `yarn dev`
-- Open browser: `http://localhost:3001`
+```bash
+$ npx pry-cli@latest -v lite
+# or
+$ npx pry-cli@latest my-app -v lite
+```
 
 ## File Structure
 
